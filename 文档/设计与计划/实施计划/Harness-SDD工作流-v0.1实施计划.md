@@ -1,4 +1,4 @@
-# Harness / SDD 工作流 v0.1 Implementation Plan
+# Harness / SDD 工作流 v0.1 实施计划
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -22,7 +22,8 @@
 
 **Files:**
 - Create: `README.md`
-- Create: `docs/superpowers/specs/2026-07-14-harness-sdd-v0.1-design.md`
+- Create: `项目首页.md`
+- Create: `文档/设计与计划/设计说明/Harness-SDD工作流-v0.1设计说明.md`
 
 - [x] **Step 1:** 记录背景、目标、非目标、资产模型、门禁和问题分级。
 - [x] **Step 2:** 在 README 中提供目录导航、推荐结构和最小试点步骤。
@@ -31,7 +32,7 @@
 ### Task 2: 提供可执行流程
 
 **Files:**
-- Create: `docs/workflow/sdd-workflow-v0.1.md`
+- Create: `文档/工作流程/单需求单仓库SDD工作流-v0.1.md`
 
 - [x] **Step 1:** 描述从原始需求到 Spec Approved 的分析和评审流程。
 - [x] **Step 2:** 描述开发期间 L0、L1、L2 问题的处理回路。
@@ -40,12 +41,12 @@
 ### Task 3: 提供 Spec 与评审模板
 
 **Files:**
-- Create: `templates/spec/requirements.md`
-- Create: `templates/spec/design.md`
-- Create: `templates/spec/tasks.md`
-- Create: `templates/spec/decisions.md`
-- Create: `templates/review/spec-review-checklist.md`
-- Create: `templates/review/code-review-checklist.md`
+- Create: `模板/规格文档/需求规格模板.md`
+- Create: `模板/规格文档/技术设计模板.md`
+- Create: `模板/规格文档/实施任务模板.md`
+- Create: `模板/规格文档/决策记录模板.md`
+- Create: `模板/评审清单/规格评审清单.md`
+- Create: `模板/评审清单/代码评审一致性清单.md`
 
 - [x] **Step 1:** 创建不包含具体业务信息的通用模板。
 - [x] **Step 2:** 将业务、开发、测试的评审责任写入清单。
@@ -56,8 +57,14 @@
 **Files:**
 - Verify: repository Markdown files
 
-- [x] **Step 1:** 运行 `rg --files README.md docs templates`，确认全部交付物存在。
-- [x] **Step 2:** 运行 `rg -n "T[B]D|T[O]DO" README.md docs templates`，确认没有未处理占位内容。
+- [x] **Step 1:** 运行 `rg --files README.md 项目首页.md 文档 模板`，确认全部交付物存在。
+- [x] **Step 2:** 运行 `rg -n "T[B]D|T[O]DO" README.md 项目首页.md 文档 模板`，确认没有未处理占位内容。
 - [x] **Step 3:** 运行 `git diff --check`，确认没有空白错误。
 - [x] **Step 4:** 检查 Git 差异只包含 v0.1 文档和模板。
 - [ ] **Step 5:** 提交并推送 `main`。
+
+## 相关笔记
+
+- [[项目首页]]
+- [[Harness-SDD工作流-v0.1设计说明]]
+- [[单需求单仓库SDD工作流-v0.1]]
